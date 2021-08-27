@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vectors Part 2</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+    <p>open the Devtools and check</p>
+    <script src="./index.js"></script>
+    <script>
+      var v1 = vertor.create(10, 5);
+      console.log(v1.getX());
+      console.log(v1.getY());
+      console.log(v1.getAngle());
+      console.log(v1.getLength());
+
+      v1.setAngle(Math.PI / 6);
+      v1.setLength(100);
+      console.log(v1.getX());
+      console.log(v1.getY());
+
+      var v1 = vertor.create(10, 5),
+        v2 = vertor.create(3, 4),
+        v3 = v1.add(v2);
+
+      console.log(v3.getX(), v3.getY());
+
+      var v1 = vertor.create(10, 5);
+      console.log(v1.getLength());
+      var v2 = v1.multiply(2);
+      console.log(v2.getLength());
+      v1.addTo(v2);
+      console.log(v1.getX(), v1.getY());
+    </script>
+  </body>
+</html>
